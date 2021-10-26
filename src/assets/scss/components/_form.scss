@@ -1,0 +1,74 @@
+.membership-form-wrapper {
+    background-color: $form-wrapper-bg-color;
+    padding: 70px 90px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 12px #1E36480A;
+    color: $form-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 55px 0;
+
+    &__title{
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    &__bottom{
+        font-size: 15px;
+    }
+
+    &__link{
+        color: $form-wrapper-link-color;
+        text-decoration: none;
+    }
+}
+
+.membership-form{
+    width: 100%;
+    &__group{
+        display: flex;
+        flex-direction: column;
+        &:first-child{
+            margin-bottom: 15px;
+        }
+    }
+
+    &__forgot-password{
+        text-decoration: none;
+        color: $form-forgot-password-color;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    &__button{
+        width: 100%;
+        padding: 10px;
+        background-color: $form-button-bg-color;
+        color: $form-button-color;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+.form-input{
+   
+        padding: 12px 15px;
+        border: none;
+        background-color: $form-input-bg-color;
+        border-radius: 8px;
+        &:focus{
+            outline: 1px solid #4B9CE2;
+        }
+    
+}

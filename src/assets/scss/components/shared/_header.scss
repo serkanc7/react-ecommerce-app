@@ -1,0 +1,40 @@
+.header{
+    background-color: $header-bg-color;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__logo{
+        img{
+            width: 130px;
+            height: 40px;
+        }
+    }
+
+}
+
+.header-menu{
+    
+    &__link{
+        color: $header-link-color;
+        background-color: $header-link-bg-color;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 15px;
+
+        img{
+            margin-right: 5px;
+        }
+
+        &:first-child{
+        margin-right:10px ;
+    }
+    }
+}

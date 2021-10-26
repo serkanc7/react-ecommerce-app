@@ -1,0 +1,30 @@
+.category-tabs{
+    margin-top: 20px;
+    overflow-x: scroll;
+    display: flex; 
+    justify-content: space-between;
+ /*    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal; */
+    &::-webkit-scrollbar {
+     width: 0px; 
+}
+    &__tab{
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $category-tabs-color;
+        padding-bottom: 15px;
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+    
+        /* display: inline-block; */
+        
+        
+        &.active{
+            color: $category-tabs-active-color;
+            border-bottom: 1px solid $category-tabs-active-color;
+        }
+    }
+}

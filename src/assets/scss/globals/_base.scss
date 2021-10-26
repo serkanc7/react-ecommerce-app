@@ -1,0 +1,62 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: $main-bg-color;
+    min-height: 100vh;
+}
+
+button{
+    font-family: 'Nunito', sans-serif;
+}
+
+#root{
+    min-height: 100vh;
+}
+
+.container{
+    width: 1480px;
+    margin: auto;
+
+    @include mq(desktop-xl,max){
+        width: 1200px;
+        margin: auto;
+    }
+
+    @include mq(desktop,max){
+        width: 1000px;
+        margin: auto;
+    }
+
+    @include mq(tablet-xl,max){
+        width: 750px;
+        margin: auto;
+    }
+
+    @include mq(tablet,max){
+        width: 100%;
+    }
+
+}
+
+#modal {
+    background-color: $modal-bg-color;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal:empty {
+    display: none;
+}
+

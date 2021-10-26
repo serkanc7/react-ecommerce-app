@@ -1,0 +1,139 @@
+.product-detail{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: $product-detail-bg-color;
+    display: flex;
+    border-radius: 8px;
+
+    &__img{
+        flex: 1;
+        margin-right: 60px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__content{
+        flex: 1;
+        margin-right: 225px;
+    }
+
+    &__title{
+        color: $product-detail-title-color;
+        font-weight: normal;
+        font-size: 34px;
+        text-transform: capitalize;
+    }
+
+    &__info{
+        display: flex;
+        color: $product-detail-text-color;
+        font-size: 15px;
+        margin-top: 20px;
+        &-title{
+            flex: 1;
+            font-weight: bold;
+        }
+        &-value{
+            flex: 1;
+            text-transform: capitalize;
+        }
+    }
+
+    &__price{
+        font-size: 25px;
+        font-weight: bold;
+        color: $product-detail-text-color;
+        margin: 30px 0px;
+    }
+
+    &__buttons{
+        display: flex;
+    }
+
+    &__button{
+        flex: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        &:first-child{
+            margin-right: 10px;
+        }
+        &--offer{
+            color: $product-detail-offer-btn-color;
+            background-color: $product-detail-offer-btn-bg-color;
+        }
+        &--buy{
+            color: $product-detail-buy-btn-color;
+            background-color: $product-detail-buy-btn-bg-color;
+        }
+    }
+
+      &__issold{
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+        color: $product-detail-issold-color;
+        background-color: $product-detail-issold-bg-color;
+        padding: 10px 29px;
+    }
+
+    &__overview-title{
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 18px;
+        color: $product-detail-text-color;
+
+    }
+
+    &__overview{
+        margin-top: 10px;
+        color: $product-detail-overview-color;
+    }
+
+}
+
+.modal-content{
+    background-color: $modal-content-bg-color;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+
+    &__button{
+        padding:10px 45px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-weight: bold;
+        font-size: 18px;
+        &--buy{
+            color: #FFFFFF;
+            background-color: #4B9CE2;
+        }
+        &--cancel{
+            color: #4B9CE2;
+            background-color: #F0F8FF;
+            margin-right: 10px;
+        }
+    }
+
+     &__title{
+        color: $modal-content-title-color;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__text{
+        color: $modal-content-text-color;
+        font-size: 15px;
+    }
+
+
+    
+}
